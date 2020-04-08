@@ -9,7 +9,7 @@ let posts = require('./data/db.js');
 server.use(express.json());
 
 //endpoints
-    // get req +++[completed]+++
+    // get req 
 server.get('/api/posts', (req, res)=> {
     posts.find(req.query)
     .then( posts => {
